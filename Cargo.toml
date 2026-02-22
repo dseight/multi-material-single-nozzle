@@ -3,4 +3,9 @@ name = "multi-material-single-nozzle"
 version = "1.0.0"
 edition = "2024"
 
+[profile.release]
+strip = "debuginfo"
+lto = true
+codegen-units = 1
+
 [dependencies]
